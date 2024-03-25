@@ -36,12 +36,12 @@
       # Optional: helps save long term battery health
       # START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
       # STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
-    }; */
+    };
+  }; */
   
   # Power monitoring and analysis tool
   # powerManagement.powertop.enable = true; # --auto-tune enabled by default
   
   # Temperature monitoring and controlling on Intel CPUs
   services.thermald.enable = true;
-  };
 }

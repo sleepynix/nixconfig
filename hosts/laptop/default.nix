@@ -19,6 +19,7 @@
     ../../common/system/locale.nix
     ../../common/system/networking.nix
     ../../common/system/fprintd.nix
+    ../../common/system/battery.nix
     ../../common/desktops/${desktop}
     ../../common/desktops/fonts.nix
     ../../common/apps/system-apps.nix

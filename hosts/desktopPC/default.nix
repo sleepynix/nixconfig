@@ -6,11 +6,13 @@
   imports = 
   let
     desktop = "gnome";
+    gpu = "amd";
   in [
     ./hardware-configuration.nix
     ./boot.nix
     ../../common/system/nix-settings.nix
     ../../common/system/system-maintenance.nix
+    ../../common/system/gpu/${gpu}
     ../../common/system/users.nix
     ../../common/system/printing.nix
     ../../common/system/bluetooth.nix

@@ -40,7 +40,7 @@
   }; */
   
   # Power monitoring and analysis tool
-  # powerManagement.powertop.enable = true; # --auto-tune enabled by default
+  powerManagement.powertop.enable = true; # --auto-tune enabled by default
   
   # Temperature monitoring and controlling on Intel CPUs
   services.thermald.enable = true;

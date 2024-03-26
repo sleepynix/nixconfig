@@ -6,10 +6,11 @@
   imports =
   let
     desktop = "gnome";
+    gpu = "intel";
   in [
     ./hardware-configuration.nix
     ./boot.nix
-    ../../common/system/gpu-accel.nix
+    ../../common/system/gpu/${gpu}
     ../../common/system/nix-settings.nix
     ../../common/system/system-maintenance.nix
     ../../common/system/users.nix

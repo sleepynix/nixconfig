@@ -45,9 +45,9 @@
         # planify
       ] ++ (with pkgs-unstable; [
         # add packages from nixpkgs-unstable
-	parabolic
-	paper-clip
-	switcheroo
+	# parabolic
+	# paper-clip
+	# switcheroo
       ]);
     };
   };

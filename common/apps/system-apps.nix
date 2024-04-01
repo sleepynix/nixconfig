@@ -21,6 +21,7 @@
     pciutils
     clinfo
     vulkan-tools
+    libva-utils
     gpu-viewer
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable

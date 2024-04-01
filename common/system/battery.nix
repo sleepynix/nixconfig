@@ -9,8 +9,8 @@
   services.power-profiles-daemon.enable = false;
   
   # 2) auto-cpufreq from nixpkgs
-  services.auto-cpufreq = {
-    enable = false;
+  /* services.auto-cpufreq = {
+    enable = true;
     settings = {
       battery = {
         governor = "powersave";
@@ -21,9 +21,9 @@
         turbo = "auto";
       };
     };
-  };
+  }; */
   
-  # 3) auto-cpufreq directly from Github repo
+  # 3) auto-cpufreq directly from Github
   # see https://github.com/AdnanHodzic/auto-cpufreq?tab=readme-ov-file#nixos
   programs.auto-cpufreq = {
     enable = true;
@@ -42,8 +42,8 @@
   # 4) TLP
   # see https://linrunner.de/tlp/support/optimizing.html
   # and https://linrunner.de/tlp/settings/processor.html
-  services.tlp = {
-    enable = false;
+  /* services.tlp = {
+    enable = true;
     settings = {
       CPU_BOOST_ON_AC = 1;
       CPU_BOOST_ON_BAT = 0;
@@ -58,7 +58,7 @@
       # START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
       # STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
     };
-  };
+  }; */
   
   /* ---- ADDITIONAL TOOLS ---- */
   # Power monitoring and analysis tool

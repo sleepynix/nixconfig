@@ -18,6 +18,7 @@
     distrobox
     libreoffice-fresh
     gnome.gnome-software
+    nix-tree
     pciutils
     clinfo
     vulkan-tools

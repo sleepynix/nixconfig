@@ -2,19 +2,19 @@
 
 {
   /* ---- POWER MANAGEMENT ---- */
-  # Select only one of these: 2) auto-cpufreq OR 3) TLP
+  # Select only one of these: 2) / 3) auto-cpufreq OR 4) TLP
   # instead of default 1) Gnome PPD
   
   # 1) GNOME PPD
   services.power-profiles-daemon.enable = false;
   
-  # 2) auto-cpufreq
+  # 2) auto-cpufreq from nixpkgs
   services.auto-cpufreq = {
     enable = false;
     settings = {
       battery = {
         governor = "powersave";
-        turbo = "never";
+        turbo = "auto";
       };
       charger = {
         governor = "performance";
@@ -23,11 +23,27 @@
     };
   };
   
-  # 3) TLP
+  # 3) auto-cpufreq directly from Github repo
+  # see https://github.com/AdnanHodzic/auto-cpufreq?tab=readme-ov-file#nixos
+  programs.auto-cpufreq = {
+    enable = true;
+    settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "auto";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "auto";
+      };      
+    };
+  };
+  
+  # 4) TLP
   # see https://linrunner.de/tlp/support/optimizing.html
   # and https://linrunner.de/tlp/settings/processor.html
   services.tlp = {
-    enable = true;
+    enable = false;
     settings = {
       CPU_BOOST_ON_AC = 1;
       CPU_BOOST_ON_BAT = 0;

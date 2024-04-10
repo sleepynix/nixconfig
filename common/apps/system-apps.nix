@@ -18,9 +18,11 @@
     distrobox
     libreoffice-fresh
     gnome.gnome-software
+    nix-tree
     pciutils
     clinfo
     vulkan-tools
+    libva-utils
     gpu-viewer
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable

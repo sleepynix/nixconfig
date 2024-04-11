@@ -20,6 +20,7 @@
         description = "Brother HL-2270DW";
         deviceUri = "ipp://192.168.2.107";
         model = "drv:///brlaser.drv/br2270dw.ppd";
+        location = "Arbeitszimmer";
         ppdOptions = {
           PageSize = "A4";
           brlaserEconomode = "true";

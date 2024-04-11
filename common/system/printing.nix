@@ -14,7 +14,7 @@
     };
   };
   hardware.printers = {
-    ensurePrinters.brother = [
+    ensurePrinters = [
       {
         name = "HL-2270DW";
         description = "Brother HL-2270DW";
@@ -25,6 +25,6 @@
         };
       }
     ];
-    ensureDefaultPrinter = "brother";
+    ensureDefaultPrinter = "HL-2270DW";
   };
 }

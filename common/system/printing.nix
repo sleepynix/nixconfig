@@ -24,6 +24,7 @@
         ppdOptions = {
           PageSize = "A4";
           brlaserEconomode = "true";
+          Duplex = "None";
         };
       }
     ];

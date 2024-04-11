@@ -22,7 +22,7 @@
           ppdOptions = {
             PageSize = "A4";
           };
-        };
+        }
       ];
     };
   };

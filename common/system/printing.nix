@@ -22,7 +22,7 @@
         model = "drv:///brlaser.drv/br2270dw.ppd";
         ppdOptions = {
           PageSize = "A4";
-          brlaserEconomode = true;
+          brlaserEconomode = "true";
         };
       }
     ];

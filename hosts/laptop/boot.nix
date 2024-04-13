@@ -18,7 +18,7 @@
   # If this option isn't set, then the default LTS Kernel is used.
   # To list available kernels, start a nix repl, do ":l <nixpkgs>"
   # and check tab-completion for pkgs.linuxPackages.
-  boot.kernelPackages = pkgs.linuxPackages_6_6; # choose _latest or specific versions like pkgs.linuxPackages_6_6
+  boot.kernelPackages = pkgs.linuxPackages_latest; # choose _latest or specific versions like pkgs.linuxPackages_6_6
   
   /* ---- MUTE KEY ---- */
   # Workaround to turn off indicator light

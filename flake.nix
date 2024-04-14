@@ -1,7 +1,7 @@
 {
   description = "NixOS System Flake";
   
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, auto-cpufreq, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, ... }:
   let
     /* ---- PKGS ---- */
     system = "x86_64-linux";
@@ -19,7 +19,7 @@
         specialArgs = { inherit pkgs-unstable laptop inputs; };
         modules = [
           ./hosts/laptop
-          auto-cpufreq.nixosModules.default
+          # auto-cpufreq.nixosModules.default
         ];
       };
       

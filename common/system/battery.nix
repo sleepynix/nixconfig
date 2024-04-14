@@ -6,7 +6,7 @@
   # instead of default 1) Gnome PPD
   
   # 1) GNOME PPD
-  services.power-profiles-daemon.enable = false;
+  services.power-profiles-daemon.enable = true;
   
   # 2) auto-cpufreq from nixpkgs
   /* services.auto-cpufreq = {
@@ -25,7 +25,8 @@
   
   # 3) auto-cpufreq directly from Github
   # see https://github.com/AdnanHodzic/auto-cpufreq?tab=readme-ov-file#nixos
-  programs.auto-cpufreq = {
+  # (requires auto-cpufreq in inputs of flake.nix)
+  /* programs.auto-cpufreq = {
     enable = true;
     settings = {
       battery = {
@@ -37,7 +38,7 @@
         turbo = "auto";
       };      
     };
-  };
+  }; */
   
   # 4) TLP
   # see https://linrunner.de/tlp/support/optimizing.html

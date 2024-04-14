@@ -25,7 +25,6 @@
   
   # 3) auto-cpufreq directly from Github
   # see https://github.com/AdnanHodzic/auto-cpufreq?tab=readme-ov-file#nixos
-  # (requires auto-cpufreq in inputs of flake.nix)
   /* programs.auto-cpufreq = {
     enable = true;
     settings = {

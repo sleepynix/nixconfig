@@ -32,6 +32,7 @@
     gnome-photos
     gnome.dconf-editor
     gnomeExtensions.caffeine
+    gnomeExtensions.blur-my-shell
   ];
 
   environment.gnome.excludePackages = with pkgs; [

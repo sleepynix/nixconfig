@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   /* ---- SYSTEM MAINTENANCE ---- */
@@ -6,12 +6,12 @@
   system.autoUpgrade = {
     enable = true;
     operation = "boot"; # auto updates apply on reboot
-    flake = "/home/florian/nixconfig";
+    flake = inputs.self.outPath; # formerly "/home/florian/nixconfig"
     flags = [
       "--update-input"
       "nixpkgs"
       "--recreate-lock-file"
-      "-L" # print build logs
+      "--print-build-logs"
     ];
     allowReboot = false;
     rebootWindow = {

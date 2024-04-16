@@ -16,7 +16,7 @@
     nixosConfigurations = {
       "${laptop}" = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit pkgs-unstable laptop inputs; };
+        specialArgs = { inherit pkgs-unstable laptop; };
         modules = [
           ./hosts/laptop
         ];
@@ -24,7 +24,7 @@
       
       "${desktopPC}" = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit pkgs-unstable desktopPC inputs; };
+        specialArgs = { inherit pkgs-unstable desktopPC; };
         modules = [
           ./hosts/desktopPC
         ];

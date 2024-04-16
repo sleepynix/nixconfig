@@ -6,7 +6,7 @@
   system.autoUpgrade = {
     enable = true;
     operation = "boot"; # auto updates apply on reboot
-    flake = "/home/florian/nixconfig"
+    flake = "/home/florian/nixconfig";
     flags = [
       "--update-input"
       "nixpkgs"

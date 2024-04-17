@@ -21,11 +21,14 @@
     dates = "17:00";
     randomizedDelaySec = "15min";
   };
-  # Automatic Garbage Collection
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 5d";
+  # Automatic Garbage Collection + Optimisation
+  nix = {
+    settings.auto-optimise-store = true;
+    gc = {
+      automatic = true;
+      dates = "daily";
+      options = "--delete-older-than 4d";
+    };
   };
   # Firmware Update Service
   services = {

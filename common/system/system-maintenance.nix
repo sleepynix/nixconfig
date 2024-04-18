@@ -21,7 +21,7 @@
     dates = "17:00";
     randomizedDelaySec = "15min";
   };
-  # Automatic Garbage Collection + Optimisation
+  # Automatic Garbage Collection
   nix = {
     gc = {
       automatic = true;

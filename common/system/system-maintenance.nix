@@ -23,7 +23,6 @@
   };
   # Automatic Garbage Collection + Optimisation
   nix = {
-    settings.auto-optimise-store = true;
     gc = {
       automatic = true;
       dates = "daily";

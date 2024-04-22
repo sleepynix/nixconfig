@@ -15,6 +15,7 @@
     bat
     cowsay
     lolcat
+    asciiquarium
     distrobox
     libreoffice-fresh
     gnome.gnome-software

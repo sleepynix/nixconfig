@@ -13,6 +13,7 @@
     fzf
     btop
     bat
+    tree
     cowsay
     lolcat
     asciiquarium

@@ -19,7 +19,6 @@
     asciiquarium
     distrobox
     libreoffice-fresh
-    gnome.gnome-software
     nix-tree
     pciutils
     clinfo

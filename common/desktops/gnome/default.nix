@@ -21,6 +21,7 @@
   };
   
   environment.systemPackages = with pkgs; [
+    gnome.gnome-software
     pdfarranger
     pika-backup
     celluloid

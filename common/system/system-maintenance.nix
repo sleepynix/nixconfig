@@ -18,7 +18,7 @@
       lower = "17:00";
       upper = "18:00";
     };
-    dates = "17:00";
+    dates = "16:30";
     randomizedDelaySec = "15min";
   };
   # Automatic Garbage Collection

@@ -13,8 +13,18 @@
   services = {
     openssh = { # allow remote login via ssh
       enable = true;
-      settings.PermitRootLogin = "no";
       openFirewall = true;
+      settings = {
+        PermitRootLogin = "no";
+        AllowAgentForwarding = "no";
+        TCPKeepAlive = "no";
+        MaxSessions = "2";
+        MaxAuthTries = "3";
+        LogLevel = "VERBOSE";
+        ClientAliveCountMax = "2";
+        AllowTcpForwarding = "no";
+        AllowUsers = [ "florian" ];
+      };
     };
   };
 }

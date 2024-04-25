@@ -25,6 +25,13 @@
     vulkan-tools
     libva-utils
     gpu-viewer
+    
+    # Security-related:
+    clamav # also available as service
+    ossec # host-based instrusion detection system
+    aide # file and directory integrity checker
+    cracklib # library for checking the strength of passwords
+    
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable
   ]);

@@ -13,6 +13,7 @@
     ../../common/system/nix-settings.nix
     ../../common/system/system-maintenance.nix
     ../../common/system/gpu/${gpu}
+    ../../common/system/security.nix
     ../../common/system/users.nix
     ../../common/system/printing.nix
     ../../common/system/bluetooth.nix

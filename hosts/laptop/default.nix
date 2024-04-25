@@ -11,6 +11,7 @@
     ./hardware-configuration.nix
     ./boot.nix
     ../../common/system/gpu/${gpu}
+    ../../common/system/security.nix
     ../../common/system/nix-settings.nix
     ../../common/system/system-maintenance.nix
     ../../common/system/users.nix

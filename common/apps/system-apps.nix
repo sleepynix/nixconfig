@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     gh
     gnupg
-    neofetch
+    fastfetch
     lynis
     ffmpeg
     vlc

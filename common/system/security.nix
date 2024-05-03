@@ -66,7 +66,6 @@
     (commonConfig "systemd-ask-password-wall")
     (commonConfig "thermald")
     (commonConfig "auditd")
-    (commonConfig "sshd")
     (dmConfig "display-manager")
     # (commonConfig cups)
     # (commonConfig cups-browsed)

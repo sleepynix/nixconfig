@@ -26,6 +26,7 @@
     pika-backup
     celluloid
     impression
+    apostrophe
     gnome.file-roller
     gnome.gnome-tweaks
     gnome.gnome-boxes

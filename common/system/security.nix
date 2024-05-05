@@ -58,7 +58,6 @@
     (commonConfig "rescue")
     (commonConfig "podman")
     (commonConfig "plymouth-start")
-    (commonConfig "flatpak-repo")
     (commonConfig "avahi-daemon")
     (commonConfig "autovt@tty1")
     (commonConfig "systemd-ask-password-console")

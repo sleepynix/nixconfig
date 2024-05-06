@@ -19,13 +19,13 @@
       upper = "18:00";
     };
     dates = "16:30";
-    randomizedDelaySec = "15min";
+    # randomizedDelaySec = "15min";
   };
   # Automatic Garbage Collection
   nix = {
     gc = {
       automatic = true;
-      dates = "daily";
+      dates = "16:25";
       options = "--delete-older-than 4d";
     };
   };

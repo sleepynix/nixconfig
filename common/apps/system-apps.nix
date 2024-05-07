@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     gh
     gnupg
+    nixfmt
     fastfetch
     lynis
     ffmpeg

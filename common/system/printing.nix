@@ -14,6 +14,7 @@
     };
   };
   hardware.printers = {
+    ensureDefaultPrinter = "HL-2270DW";
     ensurePrinters = [
       {
         name = "HL-2270DW";
@@ -28,6 +29,8 @@
         };
       }
     ];
-    ensureDefaultPrinter = "HL-2270DW";
   };
+  
+  /* ---- SCANNING ---- */
+  hardware.sane.enable = true;
 }

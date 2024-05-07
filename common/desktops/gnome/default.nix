@@ -27,6 +27,7 @@
     celluloid
     impression
     apostrophe
+    gnome.simple-scan
     gnome.file-roller
     gnome.gnome-tweaks
     gnome.gnome-boxes

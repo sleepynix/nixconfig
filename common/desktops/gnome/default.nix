@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
 {
   /* ---- GNOME DESKTOP ---- */
@@ -22,11 +22,30 @@
   
   environment.systemPackages = with pkgs; [
     gnome.gnome-software
+    evolution
     pdfarranger
     pika-backup
     celluloid
     impression
     apostrophe
+    texlive.combined.scheme-small
+    setzer
+    wike
+    blanket
+    newsflash
+    fragments
+    gnome-obfuscate
+    rhythmbox
+    eyedropper
+    gnome-frog
+    easyeffects
+    gnome-podcasts
+    warp
+    metadata-cleaner
+    amberol
+    eartag
+    collision
+    diebahn
     gnome.simple-scan
     gnome.file-roller
     gnome.gnome-tweaks
@@ -36,7 +55,13 @@
     gnome.dconf-editor
     gnomeExtensions.caffeine
     gnomeExtensions.blur-my-shell
-  ];
+    # planify
+  ] ++ (with pkgs-unstable; [
+    # add packages from nixpkgs-unstable
+    parabolic
+    paper-clip
+    switcheroo
+  ]);
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour

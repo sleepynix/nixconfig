@@ -35,6 +35,7 @@
     
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable
+    typst
   ]);
 
   /* ---- PROGRAMS WITH SPECIAL OPTIONS ---- */

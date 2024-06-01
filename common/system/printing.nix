@@ -9,7 +9,7 @@
     };
     avahi = {
       enable = true;
-      nssmdns = true; # enable the mDNS NSS plug-in
+      nssmdns4 = true; # enable the mDNS NSS plug-in
       openFirewall = true; # open the firewall for UDP port 5353
     };
   };

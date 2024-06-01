@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     gh
     gnupg
-    nixfmt
+    nixfmt-rfc-style
     fastfetch
     lynis
     ffmpeg
@@ -20,6 +20,7 @@
     asciiquarium
     distrobox
     libreoffice-fresh
+    typst
     nix-tree
     pciutils
     clinfo
@@ -29,13 +30,12 @@
     
     # Security-related:
     clamav # also available as service
-    ossec # host-based instrusion detection system
+    # ossec # host-based intrusion detection system
     aide # file and directory integrity checker
     cracklib # library for checking the strength of passwords
     
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable
-    typst
   ]);
 
   /* ---- PROGRAMS WITH SPECIAL OPTIONS ---- */

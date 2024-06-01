@@ -4,19 +4,21 @@
   /* ---- GNOME DESKTOP ---- */
   services.xserver = {
     enable = true;
-    layout = "de";
-    xkbVariant = "";
+    xkb = {
+      variant = "";
+      layout = "de";
+    };
     displayManager.gdm = {
       enable = true;
       wayland = true;
     };
     desktopManager.gnome.enable = true;
-    libinput = { # Touchpad support for Laptops
-      enable = true;
-      touchpad = {
-        tappingDragLock = true;
-	naturalScrolling = true;
-      };
+  };
+  services.libinput = { # Touchpad support for Laptops
+    enable = true;
+    touchpad = {
+      tappingDragLock = true;
+      naturalScrolling = true;
     };
   };
   
@@ -28,8 +30,6 @@
     celluloid
     impression
     apostrophe
-    texlive.combined.scheme-small
-    setzer
     wike
     blanket
     newsflash
@@ -46,6 +46,9 @@
     eartag
     collision
     diebahn
+    parabolic
+    paper-clip
+    switcheroo
     gnome.simple-scan
     gnome.file-roller
     gnome.gnome-tweaks
@@ -58,9 +61,6 @@
     # planify
   ] ++ (with pkgs-unstable; [
     # add packages from nixpkgs-unstable
-    parabolic
-    paper-clip
-    switcheroo
   ]);
 
   environment.gnome.excludePackages = with pkgs; [

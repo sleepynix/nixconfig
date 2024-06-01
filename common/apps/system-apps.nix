@@ -20,6 +20,7 @@
     asciiquarium
     distrobox
     libreoffice-fresh
+    onlyoffice-bin_latest
     typst
     nix-tree
     pciutils

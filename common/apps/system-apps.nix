@@ -19,6 +19,7 @@
     lolcat
     asciiquarium
     distrobox
+    boxbuddy
     libreoffice-fresh
     onlyoffice-bin_latest
     typst

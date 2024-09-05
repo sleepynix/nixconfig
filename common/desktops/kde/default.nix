@@ -12,8 +12,8 @@
       enable = true;
       wayland.enable = true;
     };
-    desktopManager.plasma6.enable = true;
   };
+  services.desktopManager.plasma6.enable = true;
   services.libinput = { # Touchpad support for Laptops
     enable = true;
     touchpad = {

@@ -10,13 +10,15 @@
       ubuntu_font_family
       roboto
       intel-one-mono
+      inter
+      fira
     ];
     fontconfig = {
       enable = true;
       defaultFonts = {
-        serif = [ "Ubuntu" ];
-	sansSerif = [ "Ubuntu" ];
-	monospace = [ "Ubuntu" ];
+        serif = [ "Inter" ];
+	sansSerif = [ "Inter" ];
+	monospace = [ "Inter" ];
       };
     };
   };

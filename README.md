@@ -2,4 +2,4 @@
 
 # My personal config files
 
-I'm also on [NixOS Discourse](https://discourse.nixos.org/u/sleepy/summary) .
+My [NixOS Discourse](https://discourse.nixos.org/u/sleepy/summary) profile.

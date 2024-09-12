@@ -40,6 +40,7 @@
     "steam-run"
     "geogebra"
     "spotify"
+    "unigine-valley"
     "libfprint-2-tod1-goodix"
   ];
  

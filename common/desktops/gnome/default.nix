@@ -52,6 +52,7 @@
     gnome.simple-scan
     gnome.file-roller
     gnome.gnome-tweaks
+    resources
     gnome.gnome-boxes
     gnome.gnome-sound-recorder
     gnome-photos

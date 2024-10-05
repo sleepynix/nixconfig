@@ -24,6 +24,7 @@
   
   environment.systemPackages = with pkgs; [
     gnome.gnome-software
+    pods
     evolution
     pdfarranger
     pika-backup

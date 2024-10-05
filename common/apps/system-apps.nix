@@ -18,8 +18,9 @@
     cowsay
     lolcat
     asciiquarium
-    distrobox
-    boxbuddy
+    # distrobox
+    # boxbuddy
+    toolbox
     libreoffice-fresh
     onlyoffice-bin_latest
     typst

@@ -14,7 +14,7 @@
       packages = with pkgs; [
         signal-desktop
         qalculate-gtk
-        geogebra6
+        # geogebra6
         joplin-desktop
         element-desktop
         drawio

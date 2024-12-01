@@ -23,7 +23,8 @@
   };
   
   environment.systemPackages = with pkgs; [
-    gnome.gnome-software
+    ptyxis
+    gnome-software
     pods
     evolution
     pdfarranger
@@ -50,14 +51,14 @@
     parabolic
     paper-clip
     switcheroo
-    gnome.simple-scan
-    gnome.file-roller
-    gnome.gnome-tweaks
+    simple-scan
+    file-roller
+    gnome-tweaks
     resources
-    gnome.gnome-boxes
-    gnome.gnome-sound-recorder
+    gnome-boxes
+    gnome-sound-recorder
     gnome-photos
-    gnome.dconf-editor
+    dconf-editor
     gnomeExtensions.caffeine
     gnomeExtensions.blur-my-shell
     # planify
@@ -67,7 +68,8 @@
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
-    gnome.cheese
-    gnome.gnome-music
+    cheese
+    gnome-music
+    gnome-console
   ];
 }

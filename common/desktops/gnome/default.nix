@@ -35,11 +35,13 @@
     wike
     blanket
     newsflash
+    mousam
     fragments
     gnome-obfuscate
     rhythmbox
     eyedropper
     gnome-frog
+    memorado
     easyeffects
     gnome-podcasts
     warp

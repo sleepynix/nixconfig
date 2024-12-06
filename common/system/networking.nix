@@ -1,7 +1,5 @@
-{ config, pkgs, ... }:
-
 {
-  /* ---- NETWORKING ---- */
+  # ---- NETWORKING ----
   networking = {
     networkmanager.enable = true;
     firewall.enable = true;
@@ -11,7 +9,8 @@
   };
 
   services = {
-    openssh = { # allow remote login via ssh
+    openssh = {
+      # allow remote login via ssh
       enable = true;
       openFirewall = true;
       settings = {

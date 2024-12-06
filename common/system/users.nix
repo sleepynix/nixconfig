@@ -1,7 +1,11 @@
-{ config, lib, pkgs, pkgs-unstable, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  ...
+}:
 
 {
-  /* ---- USERS ---- */
+  # ---- USERS ----
   users = {
     defaultUserShell = pkgs.fish;
     # -- Florian -- #
@@ -10,23 +14,29 @@
       description = "Florian";
       # initialPassword = "0000"; # change after first login!
       # useDefaultShell = true;
-      extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [
-        signal-desktop
-        qalculate-gtk
-        # geogebra6
-        joplin-desktop
-        element-desktop
-        drawio
-        gimp
-        darktable
-        mediathekview
-        openboard
-        spotify
-	unigine-valley
-      ] ++ (with pkgs-unstable; [
-        # add packages from nixpkgs-unstable
-      ]);
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+      ];
+      packages =
+        with pkgs;
+        [
+          signal-desktop
+          qalculate-gtk
+          # geogebra6
+          joplin-desktop
+          element-desktop
+          drawio
+          gimp
+          darktable
+          mediathekview
+          openboard
+          spotify
+          unigine-valley
+        ]
+        ++ (with pkgs-unstable; [
+          # add packages from nixpkgs-unstable
+        ]);
     };
   };
 }

@@ -1,7 +1,10 @@
-{ config, pkgs, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
-  /* ---- FONTS ---- */
+  # ---- FONTS ----
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
@@ -17,8 +20,8 @@
       enable = true;
       defaultFonts = {
         serif = [ "Inter" ];
-	sansSerif = [ "Inter" ];
-	monospace = [ "Inter" ];
+        sansSerif = [ "Inter" ];
+        monospace = [ "Inter" ];
       };
     };
   };

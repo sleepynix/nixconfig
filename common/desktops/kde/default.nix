@@ -1,7 +1,11 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  ...
+}:
 
 {
-  /* ---- KDE PLASMA ---- */
+  # ---- KDE PLASMA ----
   services.xserver = {
     enable = true;
     xkb = {
@@ -14,17 +18,21 @@
     };
   };
   services.desktopManager.plasma6.enable = true;
-  services.libinput = { # Touchpad support for Laptops
+  services.libinput = {
+    # Touchpad support for Laptops
     enable = true;
     touchpad = {
       tappingDragLock = true;
       naturalScrolling = true;
     };
   };
-  
-  environment.systemPackages = with pkgs; [
-    # add packages from nixpkgs-stable
-  ] ++ (with pkgs-unstable; [
-    # add packages from nixpkgs-unstable
-  ]);
+
+  environment.systemPackages =
+    with pkgs;
+    [
+      # add packages from nixpkgs-stable
+    ]
+    ++ (with pkgs-unstable; [
+      # add packages from nixpkgs-unstable
+    ]);
 }

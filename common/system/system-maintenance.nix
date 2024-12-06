@@ -1,7 +1,11 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  lib,
+  inputs,
+  ...
+}:
 
 {
-  /* ---- SYSTEM MAINTENANCE ---- */
+  # ---- SYSTEM MAINTENANCE ----
   # Automatic Upgrades
   system.autoUpgrade = {
     enable = true;

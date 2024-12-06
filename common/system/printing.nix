@@ -1,7 +1,10 @@
-{ config, pkgs, ... }:
+{
+  pkgs,
+  ...
+}:
 
 {
-  /* ---- PRINTING ---- */
+  # ---- PRINTING ----
   services = {
     printing = {
       enable = true; # enable CUPS
@@ -30,7 +33,7 @@
       }
     ];
   };
-  
-  /* ---- SCANNING ---- */
+
+  # ---- SCANNING ----
   hardware.sane.enable = true;
 }

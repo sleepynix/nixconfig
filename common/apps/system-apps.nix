@@ -1,55 +1,62 @@
-{ config, lib, pkgs, pkgs-unstable, ... }:
+{
+  pkgs,
+  pkgs-unstable,
+  ...
+}:
 
 {
-  /* ---- SYSTEM-WIDE APPLICATIONS ---- */
-  environment.systemPackages = with pkgs; [
-    gh
-    gnupg
-    nixfmt-rfc-style
-    fastfetch
-    lynis
-    ffmpeg
-    vlc
-    lf
-    fzf
-    btop
-    bat
-    tree
-    cowsay
-    lolcat
-    asciiquarium
-    # distrobox
-    # boxbuddy
-    toolbox
-    libreoffice-fresh
-    onlyoffice-bin_latest
-    typst
-    nix-tree
-    pciutils
-    clinfo
-    vulkan-tools
-    libva-utils
-    gpu-viewer
-    
-    # Security-related:
-    clamav # also available as service
-    # ossec # host-based intrusion detection system
-    aide # file and directory integrity checker
-    cracklib # library for checking the strength of passwords
-    
-  ] ++ (with pkgs-unstable; [
-    # add packages from nixpkgs-unstable
-  ]);
+  # ---- SYSTEM-WIDE APPLICATIONS ----
+  environment.systemPackages =
+    with pkgs;
+    [
+      gh
+      gnupg
+      nixfmt-rfc-style
+      fastfetch
+      lynis
+      ffmpeg
+      vlc
+      lf
+      fzf
+      btop
+      bat
+      tree
+      cowsay
+      lolcat
+      asciiquarium
+      # distrobox
+      # boxbuddy
+      toolbox
+      libreoffice-fresh
+      onlyoffice-bin_latest
+      typst
+      nix-tree
+      pciutils
+      clinfo
+      vulkan-tools
+      libva-utils
+      gpu-viewer
 
-  /* ---- PROGRAMS WITH SPECIAL OPTIONS ---- */
+      # Security-related:
+      clamav # also available as service
+      # ossec # host-based intrusion detection system
+      aide # file and directory integrity checker
+      cracklib # library for checking the strength of passwords
+
+    ]
+    ++ (with pkgs-unstable; [
+      # add packages from nixpkgs-unstable
+    ]);
+
+  # ---- PROGRAMS WITH SPECIAL OPTIONS ----
   services.flatpak.enable = true;
   programs = {
     git = {
       enable = true;
       config = {
         init = {
-	  defaultBranch = "main";
-	};
+          defaultBranch = "main";
+        };
       };
     };
     fish = {
@@ -62,13 +69,38 @@
       enable = true;
       package = pkgs.gnomeExtensions.gsconnect;
     };
-    neovim = {
+    nixvim = {
       enable = true;
-      defaultEditor = true;
-      configure = {
-        customRC = ''
-          set relativenumber
-        '';
+      colorschemes.catppuccin = {
+        enable = true;
+        settings.flavour = "mocha";
+      };
+      plugins = {
+        web-devicons.enable = true;
+        nvim-tree = {
+          enable = true;
+          autoClose = true;
+          view = {
+            number = true;
+            relativenumber = true;
+          };
+        };
+        lualine.enable = true;
+        cmp = {
+          enable = true;
+          settings = {
+            autoEnableSources = true;
+          };
+        };
+        cmp-treesitter.enable = true;
+        lsp = {
+          enable = true;
+          inlayHints = true;
+          servers.nixd = {
+            enable = true;
+            autostart = true;
+          };
+        };
       };
     };
     dconf.enable = true;
@@ -83,10 +115,11 @@
     };
     steam.enable = true;
   };
-  # Enable udev rules for Steam hardware such as the Steam Controller 
+
+  # Enable udev rules for Steam hardware such as the Steam Controller
   hardware.steam-hardware.enable = true;
 
-  /* ---- VIRTUALISATION ---- */
+  # ---- VIRTUALISATION ----
   virtualisation.waydroid.enable = true;
   virtualisation.podman.enable = true;
 }

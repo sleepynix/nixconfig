@@ -1,7 +1,5 @@
-{ config, pkgs, ... }:
-
 {
-  /* ---- BLUETOOTH ---- */
+  # ---- BLUETOOTH ----
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;

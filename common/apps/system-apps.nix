@@ -86,6 +86,7 @@
           };
         };
         lualine.enable = true;
+        indent-blankline.enable = true;
         cmp = {
           enable = true;
           settings = {

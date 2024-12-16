@@ -15,13 +15,15 @@
       intel-one-mono
       inter
       fira
+      fira-code
+      fira-code-symbols
     ];
     fontconfig = {
       enable = true;
       defaultFonts = {
         serif = [ "Inter" ];
         sansSerif = [ "Inter" ];
-        monospace = [ "Inter" ];
+        monospace = [ "Fira Code" ];
       };
     };
   };

@@ -106,6 +106,8 @@
             "browser.crashReports.unsubmittedCheck.autoSubmit2" = lock-false;
             "dom.reporting.crash.enabled" = lock-false;
             "browser.tabs.crashReporting.sendReport" = lock-false;
+            # "sidebar.revamp" = true; # Error: Preference not allowed for stability reasons.
+            # "sidebar.verticalTabs" = true; # Error: Preference not allowed for stability reasons.
           };
       };
     };

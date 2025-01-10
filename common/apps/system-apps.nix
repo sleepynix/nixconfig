@@ -24,13 +24,12 @@
       cowsay
       lolcat
       asciiquarium
-      # distrobox
-      # boxbuddy
       toolbox
       libreoffice-fresh
       onlyoffice-bin_latest
       typst
       nix-tree
+      hydra-check
       pciutils
       clinfo
       vulkan-tools
@@ -44,7 +43,8 @@
       cracklib # library for checking the strength of passwords
 
     ]
-    ++ (with pkgs-unstable; [
+    ++ (with pkgs-unstable;
+    [
       # add packages from nixpkgs-unstable
     ]);
 

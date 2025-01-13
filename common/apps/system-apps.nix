@@ -17,6 +17,7 @@
       ffmpeg
       vlc
       lf
+      superfile
       fzf
       btop
       bat

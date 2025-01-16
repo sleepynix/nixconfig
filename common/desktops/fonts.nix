@@ -17,6 +17,7 @@
       fira
       fira-code
       fira-code-symbols
+      fira-code-nerdfont
     ];
     fontconfig = {
       enable = true;

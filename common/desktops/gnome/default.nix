@@ -64,10 +64,13 @@
       simple-scan
       file-roller
       gnome-tweaks
+      refine
       resources
       gnome-boxes
       gnome-sound-recorder
       gnome-photos
+      gnome-decoder
+      shortwave
       dconf-editor
       gnomeExtensions.caffeine
       gnomeExtensions.blur-my-shell

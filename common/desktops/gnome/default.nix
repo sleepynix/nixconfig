@@ -40,6 +40,8 @@
       celluloid
       impression
       apostrophe
+      folio
+      papers
       wike
       blanket
       newsflash

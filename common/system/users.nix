@@ -30,6 +30,7 @@
           gimp
           darktable
           mediathekview
+	  tenacity
           openboard
           spotify
           unigine-valley

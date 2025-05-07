@@ -30,10 +30,9 @@
           gimp
           darktable
           mediathekview
-	  tenacity
+          tenacity
           openboard
           spotify
-          unigine-valley
         ]
         ++ (with pkgs-unstable; [
           # add packages from nixpkgs-unstable

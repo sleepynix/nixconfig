@@ -27,7 +27,7 @@
           joplin-desktop
           element-desktop
           drawio
-          gimp
+          gimp3
           darktable
           mediathekview
           tenacity

@@ -14,7 +14,6 @@
     flags = [
       "--update-input"
       "nixpkgs"
-      "--recreate-lock-file"
       "--print-build-logs"
     ];
     allowReboot = false;

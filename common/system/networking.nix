@@ -6,6 +6,7 @@
     # firewall.allowedTCPPortRanges = [ { from = 1714; to = 1764;} ]; # for Gsconnect
     # firewall.allowedUDPPortRanges = [ { from = 1714; to = 1764;} ]; # for Gsconnect
     # (The module "programs.kdeconnect" opens the required ports automatically.)
+    firewall.allowedUDPPorts = [ 51413 ]; # Fragments
   };
 
   services = {

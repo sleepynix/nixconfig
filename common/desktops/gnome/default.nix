@@ -76,6 +76,7 @@
       dconf-editor
       gnomeExtensions.caffeine
       gnomeExtensions.blur-my-shell
+      gnomeExtensions.dash-to-dock
       # planify
     ]
     ++ (with pkgs-unstable; [

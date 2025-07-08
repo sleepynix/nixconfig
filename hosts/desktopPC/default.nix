@@ -39,14 +39,14 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
-      "1password"
+      # "1password"
+      # "spotify"
       "steam"
       "steam-original"
       "steam-run"
       "steam-unwrapped"
       "geogebra"
       "drawio"
-      "spotify"
       "unigine-valley"
       # "libfprint-2-tod1-goodix"
     ];

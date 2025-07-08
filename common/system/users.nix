@@ -32,10 +32,10 @@
           mediathekview
           tenacity
           openboard
-          spotify
         ]
         ++ (with pkgs-unstable; [
           # add packages from nixpkgs-unstable
+          spotify
         ]);
     };
   };

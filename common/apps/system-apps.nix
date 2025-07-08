@@ -109,7 +109,7 @@
     _1password-gui = {
       enable = true;
       polkitPolicyOwners = [ "florian" ];
-      package = pkgs._1password-gui; # or pkgs-unstable
+      package = pkgs-unstable._1password-gui; # or pkgs
     };
     ausweisapp = {
       enable = true;

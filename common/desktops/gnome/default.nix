@@ -77,6 +77,8 @@
       gnomeExtensions.caffeine
       gnomeExtensions.blur-my-shell
       gnomeExtensions.dash-to-dock
+      gnomeExtensions.paperwm
+      gnomeExtensions.tiling-shell
       # planify
     ]
     ++ (with pkgs-unstable; [

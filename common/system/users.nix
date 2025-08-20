@@ -24,8 +24,8 @@
           signal-desktop
           qalculate-gtk
           # geogebra6
-          joplin-desktop
-          element-desktop
+          # element-desktop
+          logseq
           drawio
           gimp3
           darktable

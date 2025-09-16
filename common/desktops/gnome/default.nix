@@ -38,7 +38,6 @@
       pdfarranger
       pika-backup
       celluloid
-      impression
       apostrophe
       folio
       papers

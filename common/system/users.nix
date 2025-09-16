@@ -32,6 +32,7 @@
           mediathekview
           tenacity
           openboard
+          nextcloud-client
         ]
         ++ (with pkgs-unstable; [
           # add packages from nixpkgs-unstable

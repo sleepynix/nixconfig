@@ -14,8 +14,8 @@
     enable = true;
   };
   boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.initrd.luks.devices."luks-9cb8ef08-b641-471d-b0eb-ec1924e778be".device = "/dev/disk/by-uuid/9cb8ef08-b641-471d-b0eb-ec1924e778be"; # root (from hardware-configuration.nix)
-  boot.initrd.luks.devices."luks-cc2e6027-4989-4f6e-940c-29e6ac83834a".device = "/dev/disk/by-uuid/cc2e6027-4989-4f6e-940c-29e6ac83834a"; # swap (from configuration.nix)
+  boot.initrd.luks.devices."luks-2d5ce4c4-88f4-436e-846f-61cdc907ae8a".device = "/dev/disk/by-uuid/2d5ce4c4-88f4-436e-846f-61cdc907ae8a"; # root (from hardware-configuration.nix)
+  boot.initrd.luks.devices."luks-9a291fa6-db17-474d-b7f1-83606ad93f20".device = "/dev/disk/by-uuid/9a291fa6-db17-474d-b7f1-83606ad93f20"; # swap (from configuration.nix)
 
   # ---- KERNEL VERSION ----
   # If this option isn't set, then the default LTS Kernel is used.

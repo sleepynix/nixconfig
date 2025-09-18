@@ -39,7 +39,6 @@
       pika-backup
       celluloid
       apostrophe
-      folio
       papers
       wike
       blanket

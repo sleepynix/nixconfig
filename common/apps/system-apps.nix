@@ -36,6 +36,7 @@
       vulkan-tools
       libva-utils
       gpu-viewer
+      # warehouse
 
       # Security-related:
       clamav # also available as service

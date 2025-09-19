@@ -23,7 +23,7 @@
         [
           signal-desktop
           qalculate-gtk
-          # geogebra6
+          geogebra6
           # element-desktop
           logseq
           drawio

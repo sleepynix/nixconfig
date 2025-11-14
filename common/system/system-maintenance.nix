@@ -12,9 +12,11 @@
     operation = "boot"; # auto updates apply on reboot
     flake = inputs.self.outPath;
     flags = [
-      "--update-input"
-      "nixpkgs"
+      "--update-input" "nixpkgs"
+      "--update-input" "nixpkgs-unstable"
+      "--update-input" "nixvim"
       "--print-build-logs"
+      "--recreate-lock-file"
     ];
     allowReboot = false;
     rebootWindow = {

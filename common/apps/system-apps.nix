@@ -26,6 +26,7 @@
       lolcat
       asciiquarium
       toolbox
+      gearlever
       libreoffice-fresh
       onlyoffice-bin_latest
       typst
@@ -66,6 +67,10 @@
       interactiveShellInit = ''
         set -U fish_greeting # disable greeting
       '';
+    };
+    appimage = {
+      enable = true;
+      binfmt = true;
     };
     kdeconnect = {
       enable = true;

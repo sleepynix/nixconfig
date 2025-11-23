@@ -10,9 +10,9 @@
     configurationLimit = 10;
   };
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.plymouth = {
+  /* boot.plymouth = { # boot splash screen
     enable = true;
-  };
+  }; */
   boot.initrd.kernelModules = [ "i915" ];
   boot.initrd.luks.devices."luks-d1e14785-ad63-4e57-af8a-1d05503cbac0".device = "/dev/disk/by-uuid/d1e14785-ad63-4e57-af8a-1d05503cbac0"; # root (from hardware-configuration.nix)
   boot.initrd.luks.devices."luks-acfbf4fe-7ea9-4633-a3c5-7b49ec1233ce".device = "/dev/disk/by-uuid/acfbf4fe-7ea9-4633-a3c5-7b49ec1233ce"; # swap (from configuration.nix)

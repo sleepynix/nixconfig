@@ -10,9 +10,9 @@
     configurationLimit = 10;
   };
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.plymouth = {
+  /* boot.plymouth = { # boot splash screen
     enable = true;
-  };
+  }; */
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.initrd.luks.devices."luks-c969ce41-1187-4ccd-b297-c7274a82a6d6".device = "/dev/disk/by-uuid/c969ce41-1187-4ccd-b297-c7274a82a6d6"; # root (from hardware-configuration.nix)
   boot.initrd.luks.devices."luks-0ab13855-fe84-485f-ac82-35b674c133b8".device = "/dev/disk/by-uuid/0ab13855-fe84-485f-ac82-35b674c133b8"; # swap (from configuration.nix)

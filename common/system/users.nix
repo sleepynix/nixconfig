@@ -24,14 +24,10 @@
           signal-desktop
           qalculate-gtk
           geogebra6
-          # element-desktop
           logseq
-          drawio
           gimp3
           darktable
           mediathekview
-          tenacity
-          openboard
           nextcloud-client
         ]
         ++ (with pkgs-unstable; [

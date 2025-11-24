@@ -43,23 +43,16 @@
       wike
       blanket
       newsflash
-      mousam
       fragments
-      gnome-obfuscate
       rhythmbox
-      eyedropper
       gnome-frog
-      memorado
       easyeffects
-      gnome-podcasts
       warp
       metadata-cleaner
       amberol
       eartag
       collision
-      diebahn
       parabolic
-      paper-clip
       switcheroo
       simple-scan
       file-roller
@@ -70,7 +63,6 @@
       gnome-sound-recorder
       gnome-photos
       gnome-decoder
-      shortwave
       dconf-editor
       gnomeExtensions.caffeine
       gnomeExtensions.blur-my-shell

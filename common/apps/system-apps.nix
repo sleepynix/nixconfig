@@ -28,7 +28,7 @@
       toolbox
       gearlever
       libreoffice-fresh
-      onlyoffice-bin_latest
+      onlyoffice-desktopeditors
       typst
       nix-tree
       hydra-check
@@ -87,9 +87,11 @@
         nvim-tree = {
           enable = true;
           autoClose = true;
-          view = {
-            number = true;
-            relativenumber = true;
+          settings = {
+            view = {
+              number = true;
+              relativenumber = true;
+            };
           };
         };
         lualine.enable = true;

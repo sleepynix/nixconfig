@@ -7,24 +7,25 @@
 
 {
   # ---- GNOME DESKTOP ----
-  services.xserver = {
-    enable = true;
-    xkb = {
-      variant = "";
-      layout = "de";
-    };
+  services = {
+    desktopManager.gnome.enable = true;
     displayManager.gdm = {
       enable = true;
       wayland = true;
     };
-    desktopManager.gnome.enable = true;
-  };
-  services.libinput = {
-    # Touchpad support for Laptops
-    enable = true;
-    touchpad = {
-      tappingDragLock = true;
-      naturalScrolling = true;
+    xserver = {
+      enable = true;
+      xkb = {
+        variant = "";
+        layout = "de";
+      };
+    };
+    libinput = { # Touchpad support for Laptops
+      enable = true;
+      touchpad = {
+        tappingDragLock = true;
+        naturalScrolling = true;
+      };
     };
   };
 

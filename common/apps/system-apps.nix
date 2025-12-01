@@ -11,7 +11,7 @@
     [
       gh
       gnupg
-      nixfmt-rfc-style
+      nixfmt
       fastfetch
       lynis
       ffmpeg

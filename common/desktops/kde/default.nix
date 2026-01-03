@@ -40,6 +40,11 @@
     ]);
 
   programs = {
-    # add KDE specific programs
+    kde-pim = {
+      enable = true;
+      kmail = true;
+      kontact = true;
+      merkuro = true;
+    };
   };
 }

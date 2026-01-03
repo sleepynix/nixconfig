@@ -72,10 +72,6 @@
       enable = true;
       binfmt = true;
     };
-    kdeconnect = {
-      enable = true;
-      package = pkgs.gnomeExtensions.gsconnect;
-    };
     nixvim = {
       enable = true;
       colorschemes.catppuccin = {
@@ -113,7 +109,6 @@
         };
       };
     };
-    dconf.enable = true;
     _1password-gui = {
       enable = true;
       polkitPolicyOwners = [ "florian" ];

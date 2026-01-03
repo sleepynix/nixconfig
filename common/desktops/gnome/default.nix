@@ -29,6 +29,7 @@
     };
   };
 
+  # ---- GNOME specific applications ----
   environment.systemPackages =
     with pkgs;
     [
@@ -75,6 +76,14 @@
     ++ (with pkgs-unstable; [
       # add packages from nixpkgs-unstable
     ]);
+
+  programs = {
+    dconf.enable = true;
+    kdeconnect = {
+      enable = true;
+      package = pkgs.gnomeExtensions.gsconnect;
+    };
+  };
 
   environment.gnome.excludePackages =
     with pkgs;

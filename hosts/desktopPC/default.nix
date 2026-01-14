@@ -9,7 +9,7 @@
   networking.hostName = "${desktopPC}";
   imports =
     let
-      desktop = "kde";
+      desktop = "gnome";
       gpu = "amd";
     in
     [

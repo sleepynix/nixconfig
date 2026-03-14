@@ -12,7 +12,9 @@
     operation = "boot"; # auto updates apply on reboot
     flake = "/home/florian/nixconfig";
     flags = [
-      "--update-input" "nixpkgs" "nixpkgs-unstable" "nixvim"
+      "--update-input" "nixpkgs"
+      "--update-input" "nixpkgs-unstable"
+      "--update-input" "nixvim"
       "--print-build-logs"
       "--recreate-lock-file"
     ];

@@ -75,6 +75,7 @@
     ]
     ++ (with pkgs-unstable; [
       # add packages from nixpkgs-unstable
+      typesetter
     ]);
 
   programs = {

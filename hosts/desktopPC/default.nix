@@ -31,6 +31,8 @@
       ../../common/apps/firefox.nix
     ];
 
+  hardware.facter.reportPath = ./facter.json;
+
   # ---- UNFREE SOFTWARE ----
   # Allow any unfree software from pkgs:
   # nixpkgs.config.allowUnfree = true;

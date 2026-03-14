@@ -12,6 +12,7 @@
       gh
       gnupg
       nixfmt
+      nixos-facter # hardware configuration tool
       fastfetch
       lynis
       ffmpeg

@@ -37,6 +37,7 @@
       gnome-software
       pods
       evolution
+      thunderbird
       pdfarranger
       pika-backup
       celluloid

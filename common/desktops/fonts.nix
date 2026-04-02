@@ -10,6 +10,7 @@
     packages = with pkgs; [
       source-sans
       noto-fonts
+      noto-fonts-cjk-sans
       ubuntu-classic
       roboto
       intel-one-mono

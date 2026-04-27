@@ -65,7 +65,7 @@
           directory = "/home/florian/nixconfig";
         };
       };
-   };
+    };
     fish = {
       enable = true;
       interactiveShellInit = ''

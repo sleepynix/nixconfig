@@ -43,4 +43,8 @@
     enable = lib.mkDefault true;
     interval = "weekly";
   };
+
+  # ---- Firmware ----
+  # Enable all firmware, including unfree packages that must be explictly allowed
+  # hardware.enableAllFirmware = true;
 }

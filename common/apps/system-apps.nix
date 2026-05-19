@@ -140,7 +140,10 @@
       enable = true;
       openFirewall = true;
     };
-    steam.enable = true;
+    steam = {
+      enable = true;
+      extraPackages = [ pkgs.hidapi ];
+    };
   };
 
   # Enable udev rules for Steam hardware such as the Steam Controller

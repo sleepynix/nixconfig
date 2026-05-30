@@ -24,7 +24,7 @@
           signal-desktop
           qalculate-gtk
           geogebra6
-          logseq
+          # logseq # build failure because electron-39.8.10 is EOL
           gimp3
           darktable
           mediathekview

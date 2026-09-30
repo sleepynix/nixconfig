@@ -12,7 +12,7 @@
       gh
       gnupg
       nixfmt
-      nixos-facter # hardware configuration tool
+      # nixos-facter # hardware configuration tool
       fastfetch
       lynis
       ffmpeg
@@ -41,10 +41,10 @@
       # warehouse
 
       # Security-related:
-      clamav # also available as service
+      # clamav # also available as service
       # ossec # host-based intrusion detection system
-      aide # file and directory integrity checker
-      cracklib # library for checking the strength of passwords
+      # aide # file and directory integrity checker
+      # cracklib # library for checking the strength of passwords
 
     ]
     ++ (with pkgs-unstable;

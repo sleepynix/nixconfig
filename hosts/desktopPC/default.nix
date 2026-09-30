@@ -18,7 +18,6 @@
       ../../common/system/nix-settings.nix
       ../../common/system/system-maintenance.nix
       ../../common/system/gpu/${gpu}
-      ../../common/system/security.nix
       ../../common/system/users.nix
       ../../common/system/printing.nix
       ../../common/system/bluetooth.nix
@@ -30,8 +29,6 @@
       ../../common/apps/system-apps.nix
       ../../common/apps/firefox.nix
     ];
-
-  hardware.facter.reportPath = ./facter.json;
 
   # ---- UNFREE SOFTWARE ----
   # Allow any unfree software from pkgs:
@@ -59,5 +56,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.11"; # Did you read the comment?
+  system.stateVersion = "26.05"; # Did you read the comment?
 }
